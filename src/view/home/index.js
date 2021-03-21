@@ -5,6 +5,10 @@ import Navbar from '../../components/navbar/';
 import { useSelector } from 'react-redux';
 import firebase from '../../config/firebase';
 import EventoCard from '../../components/evento-card/'
+import EventoCardExcl from '../../components/evento-card-excl/'
+
+
+
 
 function Home({match}){
 
@@ -12,6 +16,7 @@ function Home({match}){
     const [pesquisa, setPesquisa] = useState('');
     let listaeventos = []; 
     const usuarioEmail = useSelector(state => state.usuarioEmail);
+    
 
     useEffect(() => {
 
@@ -53,12 +58,26 @@ function Home({match}){
     return(
         <>
         <Navbar/>
+        <div className="my-teams">
+        <ul className="ul-teams">
+        <li className="li-teams"><Link className="li-link" to="/eventos/meus">Meus Eventos</Link></li> 
+        <li className="li-teams"><Link className="li-link-cadastro" to="/eventocadastro">+</Link></li> 
+       
+        </ul>
+        <hr></hr>
+            {/* <div className=" p-3 ">
+                <h2 className="mx-auto p-5">Eventos Publicados</h2>
+                <input onChange={(e) => setPesquisa(e.target.value)} type="text" className="form-control text-center" placeholder="Pesquisar evento pelo título..." />
+            </div>
+             */}
 
+            <div className="p-3">
+            
+            {eventos.map(item => <EventoCardExcl key={item.id} id={item.id} img={item.foto} titulo={item.titulo} detalhes={item.detalhes} visualizacoes={item.visualizacoes} usuarioEmail={item.usuarioEmail}  />) }
             
 
-        <div className="row p-3">
-        {eventos.map(item => <EventoCard key={item.id} id={item.id} img={item.foto} titulo={item.titulo} detalhes={item.detalhes} visualizacoes={item.visualizacoes}   />) }
 
+            </div>
         </div>
         </>
     )

@@ -4,6 +4,8 @@ import { store, persistor } from '../src/store/';
 import { Provider } from 'react-redux';
 import { PersistGate} from 'redux-persist/integration/react';
 
+import './app-root.css';
+
 /*PÁGINAS*/
 import Login from './view/login/';
 import NovoUsuario from './view/usuario-novo/';
@@ -12,8 +14,10 @@ import UsuarioRecuperarSenha from './view/usuario-recuperar-senha/';
 import EventoCadastro from './view/evento-cadastro/';
 import EventoDetalhes from './view/evento-detalhes/';
 
+
 function App() {
   return (
+    <div className="app-root">
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
       <Router>
@@ -28,6 +32,7 @@ function App() {
       </Router>
       </PersistGate>
     </Provider>
+    </div>
   );
 }
 

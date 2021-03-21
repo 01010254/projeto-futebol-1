@@ -1,0 +1,73 @@
+.my-teams {
+    width: 50%;
+    background: #fff;
+    border-radius: 13px;
+    margin: 30px;
+}
+
+.ul-teams {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-content: space-between;
+    justify-content: space-between;
+
+    padding: 22px;
+    align-items: center;
+
+}
+
+.li-link {
+    color: #8b1f6e;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
+
+.li-link-cadastro {
+    background: linear-gradient( #bf0e4f, #8b1f6e );
+    color: #fff;
+    width: 26px;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 26px;
+    font-size: 29px;
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    border-radius: 5px;
+}
+
+.li-link:link {
+    text-decoration: none;
+}
+.li-link:hover {
+    
+    color: #8b1f6e;
+}
+.li-link:active {
+    text-decoration: none;
+}
+
+.li-link-cadastro:link {
+    text-decoration: none;
+}
+.li-link-cadastro:hover {
+    
+    color: #fff;
+}
+.li-link-cadastro:active {
+    text-decoration: none;
+}
+hr{
+    margin: 0;
+}

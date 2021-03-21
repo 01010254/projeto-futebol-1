@@ -3,7 +3,7 @@ import firebase from 'firebase';
 const firebaseConfig = {
   apiKey: "AIzaSyBAL2L6OXl774SOCsSE592j4iLlcMzzZe4",
   authDomain: "futebol-2cf8c.firebaseapp.com",
-  databaseURL: "https://futebol-2cf8c-default-rtdb.firebaseio.com/",
+  databaseURL: "https://futebol-2cf8c-default-rtdb.firebaseio.com",
   projectId: "futebol-2cf8c",
   storageBucket: "futebol-2cf8c.appspot.com",
   messagingSenderId: "1032347306883",

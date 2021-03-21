@@ -1,0 +1,121 @@
+.rodape-card{
+    color: #614ea6;
+    height: 35px;
+}
+
+.btn-detalhes{
+    background-color: #614ea6;
+    color: #fff;
+}
+
+.btn-detalhes:hover{
+    background-color: #f21667;
+    color: #fff;
+}
+
+.card-text{
+    max-height: 70px;
+    min-height: 70px;
+    overflow: hidden;
+}
+
+.img-cartao{
+    max-height: 200px;
+    max-height: 100px;
+    min-width: 100%;
+}
+
+.list-my-teams{
+    width: 100%;
+}
+.list-my-teams:hover{   
+    background: #f7eef7;
+   color: #b34280;
+   border-radius: 4px;
+
+   
+   
+
+
+}
+
+
+.btn-item:hover{
+    color: #8b1f6e;
+}
+
+.card-body{
+    display: flex;
+   
+    justify-items: center;
+    
+    flex-wrap: wrap;
+    padding: 0px;
+   
+}
+.description:hover{
+    background: #f7eef7;
+    color: #b34280;
+    border-radius: 4px;
+    
+    display: flex;
+    
+    
+}
+.description{
+   
+   display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0px;
+}
+.card-titulo{
+    width: 23%;
+    padding-left: 30px;
+}
+.card-detalhe{
+    
+    width: 40%;
+
+
+}
+.description:hover{
+    background: #f7eef7;
+    color: #b34280;
+    border-radius: 4px;
+    
+    display: flex;
+    
+    
+}
+
+.hr-my-teams{
+    width: 100% ;
+    
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.hr-my-teams:hover{
+    display: none;
+}
+
+
+
+.div-teams{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 49px;
+    align-content: center;
+}
+
+.div-teams:hover{
+    height: 50px;
+
+}
+
+.description:hover hr{
+    display: none;
+}
+

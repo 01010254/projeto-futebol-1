@@ -1,5 +1,8 @@
 .navbar{
-    background-color: #614EA6;
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bf0e4f, #8b1f6e );  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bf0e4f, #8b1f6e ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 .nav-item a{
